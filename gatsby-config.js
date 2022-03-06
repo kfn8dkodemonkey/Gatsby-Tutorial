@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: "Gatsby Tutorial",
-    description: "Building Websites that are Accessibility Drivein!!!"
+    description: "Building Accessibility Drivein Websites!!!",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+        options: {
+          name: `blog`,
+          path: `${__dirname}/blog`,
+      }
+    },
+    "gatsby-plugin-mdx",
   ],
 };
