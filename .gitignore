@@ -1,3 +1,6 @@
 node_modules/
 .cache/
 public
+
+# Allow
+!/node_modules/gatsby-plugin-mdx/utils/mdx.js
